@@ -1,0 +1,39 @@
+.state {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  /* border: 1px solid red; */
+  height: 100%;
+  color: var(--text-color);
+  font-family: 'Roboto';
+}
+
+.small-circle{
+  width: 10px;
+  height: 10px;
+  margin-top: 13px;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+.state-icon{
+  width: 30px;
+  height: 30px;
+}
+
+
+.state-number{
+  font-size: 1.8em;
+}
+
+.state-text{
+  font-size: 0.8em;
+  width: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
+  line-height: 1;
+}
+

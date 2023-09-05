@@ -1,0 +1,22 @@
+.top-nav{
+  height: 70px;
+  z-index: 0;
+  background-color: white;
+  padding-left: 80px;
+}
+
+.content{
+  /* padding-left: 100px; */
+  height: 100%;
+  display: flex;
+  /* gap: 10px; */
+  /* border: 1px solid red; */
+}
+
+.states{
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  /* border: 1px solid red; */
+  margin-left: 20px;
+}

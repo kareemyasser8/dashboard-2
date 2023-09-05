@@ -1,0 +1,18 @@
+<div class="state">
+  <div class="small-circle"></div>
+
+  <div *ngIf="inputElement.type == 'monitored'">
+    <mat-icon class="state-icon" svgIcon="gasStation"></mat-icon>
+  </div>
+
+  <div *ngIf="inputElement.type == 'update'">
+    <mat-icon class="state-icon" svgIcon="update"></mat-icon>
+  </div>
+
+  <div class="state-number">
+    {{inputElement.number}}
+  </div>
+  <div class="state-text">
+    {{inputElement.text}}
+  </div>
+</div>

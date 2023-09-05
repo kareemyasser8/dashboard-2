@@ -7,9 +7,12 @@ import { AppComponent } from './app.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { TopNavComponent } from './top-nav/top-nav.component';
+import { HomeComponent } from './home/home.component';
+import { TopNavStateComponent } from './top-nav-state/top-nav-state.component';
 
 @NgModule({
-  declarations: [AppComponent, SideNavComponent],
+  declarations: [AppComponent, SideNavComponent, TopNavComponent, HomeComponent, TopNavStateComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,6 +32,13 @@ export class AppModule {
       'gasStation',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
         '../assets/icons/gas-station-svgrepo-com-1.svg'
+      )
+    );
+
+    this.matIconRegistery.addSvgIcon(
+      'update',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../assets/icons/update.svg'
       )
     );
 
