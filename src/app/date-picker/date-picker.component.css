@@ -14,7 +14,8 @@
   color: var(--text-color);
   position: absolute;
   background-color: white;
-  top:8px
+  top:8px;
+  cursor: pointer;
 }
 
 .date-picker {
@@ -40,6 +41,7 @@ input[type="date"] {
   border: none;
   border-bottom: 2px solid var(--text-color);
   font-family: "Roboto";
+  cursor: pointer;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -49,8 +51,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-size: cover;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 input[type="date"]:focus + label {
   display: none;
+  cursor: pointer;
 }
