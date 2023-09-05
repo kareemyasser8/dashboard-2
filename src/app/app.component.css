@@ -1,0 +1,6 @@
+.app{
+  background-color: var(--bgColor);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
