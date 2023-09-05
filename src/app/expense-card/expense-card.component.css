@@ -1,0 +1,82 @@
+.expense-card{
+  width: 150px;
+  height: 120px;
+  background-color: white;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
+  justify-content: center;
+  color: var(--text-color);
+}
+
+.expense-value{
+  display: flex;
+  font-family: 'Roboto';
+  align-items: center;
+  gap: 10px;
+}
+
+.expense-value .number{
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+.expense-value .measure{
+  font-size: 1em;
+}
+
+.expense-text{
+  font-family: 'Montserret';
+  display: flex;
+  width: 130px;
+  flex-wrap: wrap;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.expense-state{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 7px
+}
+
+
+.arrow-down{
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--loss);
+}
+
+.arrow-up{
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid var(--profit);
+}
+
+.state-value{
+  font-family: 'Roboto';
+  font-size: 0.9em;
+}
+
+.success-card{
+  background-color: var(--profit);
+}
+
+.losing-card{
+  background-color: var(--secondary);
+}
+
+.success{
+  color: var(--profit)
+}
+
+.lose{
+  color: var(--loss)
+}

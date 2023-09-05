@@ -13,9 +13,10 @@ import { TopNavStateComponent } from './top-nav-state/top-nav-state.component';
 import { TopNavTabsComponent } from './top-nav-tabs/top-nav-tabs.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { FormsModule } from '@angular/forms';
+import { ExpenseCardComponent } from './expense-card/expense-card.component';
 
 @NgModule({
-  declarations: [AppComponent, SideNavComponent, TopNavComponent, HomeComponent, TopNavStateComponent, TopNavTabsComponent, DatePickerComponent],
+  declarations: [AppComponent, SideNavComponent, TopNavComponent, HomeComponent, TopNavStateComponent, TopNavTabsComponent, DatePickerComponent, ExpenseCardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

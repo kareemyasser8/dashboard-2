@@ -1,1 +1,11 @@
 <app-top-nav></app-top-nav>
+<div class="home-content">
+  <div class="expense-section">
+    <div class="expense-cards">
+      <div *ngFor="let card of cardsData">
+        <app-expense-card [expenseInput]="card"></app-expense-card>
+      </div>
+    </div>
+  </div>
+  <div class="sales-section"></div>
+</div>

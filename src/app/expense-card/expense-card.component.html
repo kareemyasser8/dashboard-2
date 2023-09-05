@@ -1,0 +1,25 @@
+<div
+  class="expense-card"
+  [ngClass]="{ 'losing-card': expenseInput.text == 'Total Value'}"
+>
+  <div class="expense-value">
+    <div class="number">{{ expenseInput.value | number : "1.0-0" }}</div>
+    <div class="measure">{{ expenseInput.measure }}</div>
+  </div>
+  <div class="expense-text">
+    {{ expenseInput.text }}
+  </div>
+  <div
+    class="expense-state"
+    [ngClass]="{
+      success: expenseInput.state == 'inc',
+      lose: expenseInput.state == 'dec'
+    }"
+  >
+    <div *ngIf="expenseInput.state == 'inc'" class="arrow-up"></div>
+    <div *ngIf="expenseInput.state == 'dec'" class="arrow-down"></div>
+    <div class="state-value">
+      {{ expenseInput.stateValue }} <span>{{ expenseInput.stateMeasure }}</span>
+    </div>
+  </div>
+</div>
