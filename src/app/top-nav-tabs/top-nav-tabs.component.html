@@ -1,1 +1,11 @@
-<p>top-nav-tabs works!</p>
+<div class="nav-tabs">
+  <div
+    class="time-tab"
+    *ngFor="let tab of tabs; let i = index"
+    (click)="selectTab(i)"
+    [class.selected]="selectedTab === i"
+  >
+    {{ tab }}
+  </div>
+
+</div>

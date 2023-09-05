@@ -9,7 +9,7 @@
   /* padding-left: 100px; */
   height: 100%;
   display: flex;
-  /* gap: 10px; */
+  gap: 10px;
   /* border: 1px solid red; */
 }
 
@@ -19,4 +19,12 @@
   width: max-content;
   /* border: 1px solid red; */
   margin-left: 20px;
+}
+
+.tabs{
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
 }

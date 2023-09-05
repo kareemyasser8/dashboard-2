@@ -1,0 +1,32 @@
+.nav-tabs {
+  background-color: var(--bgColor);
+  width: 330px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  gap: 3px;
+}
+
+.time-tab {
+  color: var(--text-color);
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-family: "Montserret";
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-size: 0.6em;
+  font-weight: lighter;
+  padding: 10px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+.selected {
+  background-color: var(--primary);
+  color: var(--white);
+}
