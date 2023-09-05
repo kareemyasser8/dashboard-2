@@ -10,9 +10,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { HomeComponent } from './home/home.component';
 import { TopNavStateComponent } from './top-nav-state/top-nav-state.component';
+import { TopNavTabsComponent } from './top-nav-tabs/top-nav-tabs.component';
 
 @NgModule({
-  declarations: [AppComponent, SideNavComponent, TopNavComponent, HomeComponent, TopNavStateComponent],
+  declarations: [AppComponent, SideNavComponent, TopNavComponent, HomeComponent, TopNavStateComponent, TopNavTabsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
