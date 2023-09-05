@@ -1,0 +1,33 @@
+<div class="date-picker-section" *ngIf="type == 'start'">
+  <div class="start-shape"></div>
+  <div class="date-displayer" >
+    <label for="start-date" *ngIf="isFocused == false"
+      ><b>Start</b> date- time</label
+    >
+    <input
+      id="start-date"
+      (focus)="changeFocus()"
+      (blur)="changeFocus()"
+      type="date"
+      class="date-picker"
+      [(ngModel)]="dateTime"
+    />
+  </div>
+</div>
+
+<div class="date-picker-section" *ngIf="type == 'end'">
+  <div class="end-shape"></div>
+  <div class="date-displayer">
+    <label for="end-date" *ngIf="isFocused == false"
+      ><b>End</b> date- time</label
+    >
+    <input
+      id="end-date"
+      (focus)="changeFocus()"
+      (blur)="changeFocus()"
+      type="date"
+      class="date-picker"
+      [(ngModel)]="dateTime"
+    />
+  </div>
+</div>

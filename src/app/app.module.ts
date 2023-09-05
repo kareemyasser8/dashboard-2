@@ -1,25 +1,28 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
-import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { SideNavComponent } from './side-nav/side-nav.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { TopNavComponent } from './top-nav/top-nav.component';
+import { NgModule } from '@angular/core';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+
+import { AppComponent } from './app.component';
+import { DatePickerComponent } from './date-picker/date-picker.component';
 import { HomeComponent } from './home/home.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 import { TopNavStateComponent } from './top-nav-state/top-nav-state.component';
 import { TopNavTabsComponent } from './top-nav-tabs/top-nav-tabs.component';
+import { TopNavComponent } from './top-nav/top-nav.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, SideNavComponent, TopNavComponent, HomeComponent, TopNavStateComponent, TopNavTabsComponent],
+  declarations: [AppComponent, SideNavComponent, TopNavComponent, HomeComponent, TopNavStateComponent, TopNavTabsComponent, DatePickerComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

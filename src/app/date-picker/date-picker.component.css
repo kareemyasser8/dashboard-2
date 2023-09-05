@@ -1,0 +1,56 @@
+.date-picker-section{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.date-displayer{
+  font-family: 'Roboto';
+  position: relative;
+}
+
+.date-displayer label{
+  font-size: 0.8em;
+  color: var(--text-color);
+  position: absolute;
+  background-color: white;
+  top:8px
+}
+
+.date-picker {
+  height: 30px;
+  width: 170px;
+}
+
+.start-shape {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid var(--primary);
+}
+
+.end-shape{
+  width: 15px;
+  height: 15px;
+  background-color: var(--primary);
+}
+
+input[type="date"] {
+  border: none;
+  border-bottom: 2px solid var(--text-color);
+  font-family: "Roboto";
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  /* background-image: url('path/to/your/icon.png'); */
+  color: var(--text-color);
+  fill: var(--text-color);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+input[type="date"]:focus + label {
+  display: none;
+}
