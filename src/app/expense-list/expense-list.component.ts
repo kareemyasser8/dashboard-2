@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExpenseListComponent implements OnInit {
 
+  optionsDisplayed: boolean = false;
+
   constructor() { }
+
+  setOptionsDisplayed(){
+    this.optionsDisplayed = !this.optionsDisplayed;
+  }
 
   ngOnInit(): void {
   }

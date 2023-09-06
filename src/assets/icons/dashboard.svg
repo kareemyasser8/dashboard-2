@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="30.17" height="30.17" viewBox="0 0 30.17 30.17">
   <defs>
     <style>
-      .dashboard-a{stroke:#f4dbd4;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}</style>
+      .dashboard-a{stroke:#f4dbd4;fill:#f4dbd4;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}</style>
   </defs>
   <g transform="translate(1.5 1.5)">
     <path class="dashboard-a"

@@ -1,5 +1,7 @@
 <div class="expense-list-container">
-  <app-list-options-pop-up></app-list-options-pop-up>
+  <app-list-options-pop-up
+    [isDisplayed]="optionsDisplayed"
+  ></app-list-options-pop-up>
   <div class="list-top-bar">
     <div class="list-top-title">
       <div class="circle"></div>
@@ -9,7 +11,11 @@
       <div class="title">Station Name Dummy</div>
     </div>
     <div class="list-three-dots">
-      <mat-icon class="icon" svgIcon="three-dots"></mat-icon>
+      <mat-icon
+        class="icon"
+        svgIcon="three-dots"
+        (click)="setOptionsDisplayed()"
+      ></mat-icon>
     </div>
   </div>
   <div class="list-divider"></div>

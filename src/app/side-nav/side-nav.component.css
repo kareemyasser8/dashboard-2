@@ -32,7 +32,7 @@
 }
 
 .icon:hover{
-  fill: #f4dbd4;
+  /* fill: #f4dbd4; */
   cursor: pointer;
 }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-list-options-pop-up',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-options-pop-up.component.css'],
 })
 export class ListOptionsPopUpComponent implements OnInit {
+
+  @Input() isDisplayed = false;
 
   options = [
     { checked: true, text: 'Total Sales' },
