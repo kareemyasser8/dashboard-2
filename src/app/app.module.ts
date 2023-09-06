@@ -16,16 +16,33 @@ import { FormsModule } from '@angular/forms';
 import { ExpenseCardComponent } from './expense-card/expense-card.component';
 import { DisplayOptionTabsComponent } from './display-option-tabs/display-option-tabs.component';
 import { ExpenseListComponent } from './expense-list/expense-list.component';
+import { StationSaleComponent } from './station-sale/station-sale.component';
+import { HourlySaleComponent } from './hourly-sale/hourly-sale.component';
+import { ListOptionsPopUpComponent } from './list-options-pop-up/list-options-pop-up.component';
 
 @NgModule({
-  declarations: [AppComponent, SideNavComponent, TopNavComponent, HomeComponent, TopNavStateComponent, TopNavTabsComponent, DatePickerComponent, ExpenseCardComponent, DisplayOptionTabsComponent, ExpenseListComponent],
+  declarations: [
+    AppComponent,
+    SideNavComponent,
+    TopNavComponent,
+    HomeComponent,
+    TopNavStateComponent,
+    TopNavTabsComponent,
+    DatePickerComponent,
+    ExpenseCardComponent,
+    DisplayOptionTabsComponent,
+    ExpenseListComponent,
+    StationSaleComponent,
+    HourlySaleComponent,
+    ListOptionsPopUpComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -39,6 +56,13 @@ export class AppModule {
       'gasStation',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
         '../assets/icons/gas-station-svgrepo-com-1.svg'
+      )
+    );
+
+    this.matIconRegistery.addSvgIcon(
+      'gasStationOrange',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../assets/icons/gas-station-svgrepo-com-2.svg'
       )
     );
 
@@ -102,6 +126,13 @@ export class AppModule {
       'settings',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
         '../../assets/icons/settings.svg'
+      )
+    );
+
+    this.matIconRegistery.addSvgIcon(
+      'three-dots',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../../assets/icons/three-dots.svg'
       )
     );
   }
