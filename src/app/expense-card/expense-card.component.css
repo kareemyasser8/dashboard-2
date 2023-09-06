@@ -80,3 +80,11 @@
 .lose{
   color: var(--loss)
 }
+
+@media (max-width: 600px){
+  .expense-card{
+    padding-left: 30px;
+    width: calc(100% - 30px);
+    /* border: 1px solid red; */
+  }
+}

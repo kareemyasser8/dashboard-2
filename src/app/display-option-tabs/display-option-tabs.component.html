@@ -1,0 +1,12 @@
+<div class="display-option-tabs">
+  <div
+    class="option-tab"
+    *ngFor="let tab of tabs; let i = index"
+    (click)="selectTab(i)"
+    [class.selected]="selectedTab === i"
+  >
+  <i class="bi bi-bar-chart"></i>
+    {{ tab }}
+  </div>
+
+</div>

@@ -13,10 +13,8 @@ export class DatePickerComponent implements OnInit {
 
   changeFocus(){
     if(this.dateTime){
-      console.log(this.dateTime)
         this.isFocused = true;
     }else{
-      console.log(this.dateTime)
       this.isFocused = !this.isFocused;
     }
 

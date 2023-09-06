@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
       value: 20_000,
       measure: 'm3',
       state: 'inc',
-      stateValue: 2,
+      stateValue: 50,
       stateMeasure: 'm3'
     },
     {
