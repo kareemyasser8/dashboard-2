@@ -1,9 +1,10 @@
 .display-option-tabs {
   background-color: var(--white);
   width: 290px;
+  /* width: 100%; */
   height: 30px;
   border-radius: 50px;
-  margin-right: 40px;
+  /* margin-right: 20%; */
   display: flex;
   justify-content: center;
   padding: 2px;
@@ -30,4 +31,10 @@
 .selected {
   background-color: var(--primary);
   color: var(--white);
+}
+
+@media (max-width: 500px) {
+    .display-option-tabs{
+      width: 140px;
+    }
 }

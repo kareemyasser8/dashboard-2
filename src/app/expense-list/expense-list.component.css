@@ -2,6 +2,6 @@
   background-color: white;
   border-radius: 20px;
   /* border: 1px solid red; */
-  width: 97%;
+  width: calc(100% - 30px);
   height: 120px;
 }

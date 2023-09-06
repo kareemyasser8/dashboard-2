@@ -22,9 +22,15 @@
 .expense-cards{
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  /* width: 100%; */
+  gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
   /* border: 1px solid red; */
+}
+
+.expense-cards > *{
+  flex: 1 1 10em;
 }
 
 .expense-display{
@@ -38,16 +44,21 @@
 }
 
 .expense-list{
-  overflow-y: scroll;
-  height: 200px;
-  border: 1px solid red;
-  padding-top: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
+  /* border: 1px solid red; */
   flex-grow: 1;
   width: 100%;
+}
+
+.expense-list-scroll{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  /* padding-bottom: 10px; */
+  /* border: 1px solid red; */
+  gap: 10px;
+  height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 /* width */
@@ -97,7 +108,8 @@
   .expense-cards{
     /* border: 1px solid red; */
     flex-direction: column;
-    flex-wrap: nowrap;
+    margin-bottom: 0px;
+    gap: 0px;
     width: 100%;
   }
 }
