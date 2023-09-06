@@ -1,1 +1,13 @@
-<p>list-options-pop-up works!</p>
+<div class="options-pop-container">
+  <div class="pop-title">View Properties:</div>
+  <div class="divider"></div>
+  <div class="select-boxes" >
+    <div class="box" *ngFor="let option of options">
+      <label class="container">
+        <input type="checkbox" [checked]="option.checked" />
+        <span class="checkmark"></span>
+        {{option.text}}
+      </label>
+    </div>
+  </div>
+</div>

@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  height: 300px;
+  gap: 30px;
+  height: max-content;
+  padding-bottom: 30px;
   width: 100%;
   /* border: 1px solid red; */
 }
@@ -13,7 +14,7 @@
   font-size: 20px;
   font-weight: 600;
   color: var(--text-color);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .station-state-container{
@@ -21,6 +22,8 @@
   /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 10px
 }
 
 .station-value{
@@ -54,5 +57,28 @@
 }
 
 .station-value .value{
-  font-size: 1.2em;
+  font-size: 1.1em;
+}
+
+.station-bar-background{
+  height: 5px;
+  padding: 0 10px 0 10px 0;
+  width: calc(100% - 20px);
+  background-color: var(--secondary);
+  border-radius: 10px;
+}
+
+.empty{
+  background-color: var(--emptyBarColor);
+}
+
+.empty-text{
+  color: var(--emptyBarColor);
+}
+
+.station-bar-background .bar-value{
+  height: 95%;
+  width: 40%;
+  border-radius: 10px;
+  background-color: var(--primary);
 }
