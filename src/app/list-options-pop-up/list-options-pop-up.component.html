@@ -3,11 +3,13 @@
   <div class="divider"></div>
   <div class="select-boxes" >
     <div class="box" *ngFor="let option of options">
-      <label class="container">
-        <input type="checkbox" [checked]="option.checked" />
-        <span class="checkmark"></span>
-        {{option.text}}
-      </label>
+      <div class="container">
+
+        <input id="{{option.text}}" type="checkbox" [checked]="option.checked" value="{{option.text}}"/>
+        <label for="{{option.text}}">{{option.text}}</label>
+        <!-- <span class="checkmark"></span> -->
+
+      </div>
     </div>
   </div>
 </div>
